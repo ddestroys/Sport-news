@@ -1,0 +1,19 @@
+@import "normalize";
+@import "variables";
+
+* {
+  outline: none;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient($bg_color0, $bg_color1);
+  position: relative;
+}
+
+@import "components/mainPages/header/index";
+@import "components/mainPages/sportNews/index";
+@import "components/mainPages/footer/index";
+@import "components/helpers/preloader/index";

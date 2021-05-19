@@ -1,0 +1,69 @@
+@import "../../../variables";
+
+.footer {
+  margin: auto auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+
+  .animated-hover {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    @include setFont('Newsreader, serif',700,0.8125rem,0.975rem);
+    color: $txt_color1;
+  }
+
+  .animated-hover:hover {
+    border-bottom: 1px solid $brdr_color0;
+  }
+
+  .footer-title {
+    @include setFont('Newsreader, serif',700,1.38125rem,1.38125rem);
+    color: $txt_color0;
+  }
+
+  .footer-content {
+    margin-top: 20px;
+    .top {
+      display: flex;
+      margin-bottom: 15px;
+      .footer-block {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        border-right: 1px solid $brdr_color1;
+        margin-right: 20px;
+
+        .category:first-child {
+          margin-bottom: 15px;
+        }
+      }
+
+      .footer-block:last-child {
+        margin-right: 10px;
+      }
+    }
+    .bottom {
+      border-top: 1px solid $brdr_color1;
+      padding-top: 15px;
+
+      .footer-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        >span {
+          margin-right: 20px;
+          font-weight: 400;
+        }
+      }
+
+      .copyright {
+        padding: 15px 0 20px 0;
+        @include setFont('Newsreader, serif',700,0.8125rem,0.975rem);
+        color: $txt_color0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,49 @@
+@import '../../../variables';
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .header-title {
+      @include setFont('san-serif',600,1.5625rem,1.875rem);
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+
+    .link-block {
+      display: flex;
+      flex-direction: row;
+
+      >svg {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      svg:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .contact {
+      text-align: center;
+      margin-bottom: 10px;
+      @include setFont('san-serif',600,1.5625rem,1.875rem);
+    }
+  }
+}

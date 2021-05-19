@@ -1,0 +1,35 @@
+//color variables
+
+$lime: #8ab91d;
+$coral: coral;
+$black: #000000;
+$lightYellow: #ffd194;
+$lightBlue: #70e1f5;
+$purple: #C33764;
+$yellow: #ffd230;
+
+//text color variables
+
+$txt_color0: $lime;
+$txt_color1: $coral;
+$txt_color2: $black;
+$txt_color3: $purple;
+
+//border color variables
+
+$brdr_color0: $coral;
+$brdr_color1: $lime;
+$brdr_color2: $black;
+
+//background color variables
+
+$bg_color0: $lightYellow;
+$bg_color1: $lightBlue;
+$bg_color2: $yellow;
+
+@mixin setFont($family, $weight, $size, $lineHeight) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+}
